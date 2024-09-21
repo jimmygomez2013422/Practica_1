@@ -1,4 +1,3 @@
-
 package controller;
 
 import java.awt.event.ActionEvent;
@@ -35,7 +34,7 @@ public class Controlador implements ActionListener {
     
     public void cargarArchivo(){
         try{
-            FileReader fileR = new FileReader("C:/Users/Jimmy/Desktop/programacion/proyectos/Practica_1/Entrada/archivo.csv");
+            FileReader fileR = new FileReader("C:/Users/Jimmy/Desktop/programacion/proyectos/Practica_1/Entrada/productos1.csv");
             BufferedReader bufferR = new BufferedReader(fileR);
             
             String linea;
@@ -126,6 +125,7 @@ public class Controlador implements ActionListener {
                cantidadProductos++;
             }
             this.ventanahilos.barra1.setValue(0);
+            //llamar la otra ventana
             
         });
         hilo.start();
@@ -138,9 +138,9 @@ public class Controlador implements ActionListener {
             mostrarTabla();
         }else if (e.getSource() == this.ventana.btnGenerar){
             this.ventanagenerar.setVisible(true);
-        }else if (e.getSource() == this.ventanagenerar){
+        }else if (e.getSource() == this.ventanagenerar.btnProducir){
             producir();
-        }
+        }    
     }
     
     

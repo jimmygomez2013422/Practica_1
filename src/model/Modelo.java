@@ -1,29 +1,36 @@
-
 package model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Modelo {
     
-    public static ArrayList<Producto> listaProducto;
-    
+    private List<Producto> listaProducto;
+
     public Modelo() {
         this.listaProducto = new ArrayList<>();
     }
     
     public void guardarProducto(Producto producto){
-        this.listaProducto.add(producto);
+        if (obtenerProducto(producto.getCodigo()) == null) {
+            this.listaProducto.add(producto);
+        } else {
+            System.out.println("El producto con el código " + producto.getCodigo() + " ya existe.");
+        }
     }
 
-    public ArrayList<Producto> getListaProducto() {
+    public List<Producto> getListaProducto() {
         return listaProducto;
     }
 
-    public void setListaProducto(ArrayList<Producto> listaProducto) {
+    public void setListaProducto(List<Producto> listaProducto) {
         this.listaProducto = listaProducto;
     }
     
     public Producto obtenerProducto(String codigo){
+        if (codigo == null || listaProducto == null) {
+            return null;
+        }
         for (Producto pro: this.listaProducto){
             if (pro.getCodigo().equals(codigo)){
                 return pro;
@@ -31,6 +38,4 @@ public class Modelo {
         }
         return null;
     }
-    
-    
 }

@@ -1,0 +1,21 @@
+codigo,nombre producto,material,color
+P-001,Destornillador,metal,verde
+P-002,Silla,madera,negro
+P-003,Tablero,vidrio,azul
+P-004,Cinta,nylon,rojo
+P-005,Guantes,hule,amarillo
+P-006,Alfombra,poliester,verde
+P-007,Martillo,metal,rojo
+P-008,Escritorio,madera,negro
+P-009,Lámpara,vidrio,amarillo
+P-010,Correa,nylon,azul
+P-011,Protector,hule,verde
+P-012,Chaqueta,poliester,negro
+P-013,Clavo,metal,rojo
+P-014,Estante,madera,amarillo
+P-015,Vaso,vidrio,verde
+P-016,Bolsa,nylon,negro
+P-017,Tapete,hule,azul
+P-018,Camiseta,poliester,rojo
+P-019,Caja,metal,amarillo
+P-020,Armario,madera,azul

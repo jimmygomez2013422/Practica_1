@@ -1,4 +1,3 @@
-
 package practica_1;
 
 import controller.Controlador;
