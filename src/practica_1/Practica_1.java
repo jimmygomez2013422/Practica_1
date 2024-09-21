@@ -1,17 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package practica_1;
 
-/**
- *
- * @author Jimmy
- */
+import controller.Controlador;
+import model.Modelo;
+import view.VentanaProducto;
+
+/**** @author Jimmy*/
 public class Practica_1 {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        Modelo modelo = new Modelo();
+        VentanaProducto ventana = new VentanaProducto();
+        Controlador controler = new Controlador(modelo, ventana);
+        ventana.setVisible(true);
     }
     
 }

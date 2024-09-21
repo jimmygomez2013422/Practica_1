@@ -6,7 +6,15 @@ public class Producto {
     //Atrivutos privados
     private String codigo;
     private String material;
+    
+    //contructores
+    public Producto(String codigo, String material){
+        this.codigo = codigo;
+        this.material = material; 
+        
+    }
 
+    //getters
     public String getCodigo() {
         return codigo;
     }
